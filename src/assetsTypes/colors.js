@@ -1,4 +1,4 @@
-export const hatAndShirtColors = {
+export const clotheColors = {
     Black: "#262E33",
     Blue01: "#65C9FF",
     Blue02: "#5199E4",
@@ -16,6 +16,14 @@ export const hatAndShirtColors = {
     White: "#FFFFFF"
 };
 
+export const clotheColorSwatches = [
+    ["#262E33", "#65C9FF", "#5199E4",],
+    ["#25557C", "#E6E6E6", "#929598",],
+    ["#3C4F5C", "#B1E2FF", "#A7FFC4",],
+    ["#FFBC69", "#FFAFB9", "#FFFFB1",], 
+    ["#FF488E", "#FF5C5C", "#FFFFFF",],
+];
+
 export const hairColors = {
     Auburn: "#A55728",
     Black: "#2C1B18",
@@ -29,6 +37,26 @@ export const hairColors = {
     SilverGray: "#E8E1E1"
 };
 export const hairColorSwatches = [
+    ["#A55728", "#2C1B18",],
+    ["#B58143", "#D6B370",],
+    ["#724133", "#4A312C",],
+    ["#F59797","#ECDCBF",],
+    ["#C93305", "#E8E1E1",],
+];
+
+export const facialHairColors = {
+    Auburn: "#A55728",
+    Black: "#2C1B18",
+    Blonde: "#B58143",
+    BlondeGolden: "#D6B370",
+    Brown: "#724133",
+    BrownDark: "#4A312C",
+    PastelPink: "#F59797",
+    Platinum: "#ECDCBF",
+    Red: "#C93305",
+    SilverGray: "#E8E1E1"
+};
+export const facialHairColorSwatches = [
     ["#A55728", "#2C1B18",],
     ["#B58143", "#D6B370",],
     ["#724133", "#4A312C",],

@@ -212,7 +212,7 @@ const LongHairBigHair = `
             <g
               id='Hair'
               strokeWidth='1'
-              fill='none'
+              fill='black'
               fillRule='evenodd'
               transform='translate(16.000000, 13.000000)'>
               <mask id='LongHairBigHair-mask3' fill='white'>
@@ -332,7 +332,7 @@ const LongHairCurly = `
             <g
               id='Hair'
               strokeWidth='1'
-              fill='none'
+              fill='black'
               fillRule='evenodd'
               transform='translate(25.000000, 10.000000)'>
               <mask id='LongHairCurly-mask2' fill='white'>
@@ -369,7 +369,7 @@ const LongHairCurvy = `
             <g
               id='Hair'
               strokeWidth='1'
-              fill='none'
+              fill='black'
               fillRule='evenodd'
               transform='translate(26.000000, 16.000000)'>
               <mask id='LongHairCurvy-mask2' fill='white'>
@@ -806,7 +806,7 @@ const LongHairFro = `
             <g
               id='Hair'
               strokeWidth='1'
-              fill='none'
+              fill='black'
               fillRule='evenodd'
               transform='translate(17.000000, 0.000000)'>
               <mask id='LongHairFro-mask2' fill='white'>

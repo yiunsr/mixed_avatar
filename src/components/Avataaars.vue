@@ -67,7 +67,7 @@
                     fill='#000000'
                     mask='url(#mask-silhouette)'></path>
                 </g>
-                <g v-html="clothesType[clotheType]"></g>
+                <g :style="cssVars" v-html="clothesType[clotheType]"></g>
                 <g v-if="clotheType === 'GraphicShirt'" :style="cssVars" v-html="GraphicShirtTypes[graphicType]"></g>
                 <g v-html="eyeTypes[eyeType]"></g>
                 <g v-html="mouthTypes[mouthType]"></g>
@@ -105,7 +105,6 @@
     import { accessoriesTypes } from '@/assetsTypes/accessories'
     import { facialHairTypes } from '@/assetsTypes/facial-hair'
     import { GraphicShirtTypes } from '@/assetsTypes/graphic-shirt'
-    import { hairColors, skinColors, hatAndShirtColors } from '@/assetsTypes/colors'
     export default {
          props: {
              isCircle: {
@@ -116,26 +115,20 @@
                 type: String,
                  default: '#6fb8e0'
             },
-            topType: { type: String, default: 'random' },
-            accessoriesType: { type: String, default: 'random'},
-            facialHairType: { type: String, default: 'random' },
-            clotheType: { type: String, default: 'random' },
-            eyeType: { type: String, default: 'random' },
-            eyebrowType: { type: String, default: 'random' },
-            mouthType: { type: String, default: 'random' },
-            skinColor: { type: String, default: 'random' },
-            graphicType: { type: String, default: 'random' },
-            hairColor: { type: String, default: 'random' },
-            facialHairColor: { type: String, default: 'random' },
-            topColor: { type: String, default: 'random' },
-            clotheColor: { type: String, default: 'random' },
+            topType: { type: String},
+            accessoriesType: { type: String},
+            facialHairType: { type: String},
+            clotheType: { type: String},
+            eyeType: { type: String},
+            eyebrowType: { type: String},
+            mouthType: { type: String},
+            skinColor: { type: String},
+            graphicType: { type: String},
+            hairColor: { type: String},
+            facialHairColor: { type: String},
+            topColor: { type: String },
+            clotheColor: { type: String},
          },
-        methods: {
-            getRandomChoice (items) {
-                const itemsLength = Object.entries(items).length
-                return Object.entries(items)[Math.floor((Math.random()*(itemsLength)))][1]
-            }
-        },
         data () {
             return {
                 mouthTypes: mouthTypes,
@@ -146,18 +139,15 @@
                 facialHairTypes: facialHairTypes,
                 accessoriesTypes: accessoriesTypes,
                 GraphicShirtTypes: GraphicShirtTypes,
-                hatAndShirtColors: hatAndShirtColors,
-                hairColors: hairColors,
-                skinColors: skinColors,
             }
         },
         computed: {
             cssVars () {
               return {
                 '--avataaar-hair-color': this.hairColor,
-                '--avataaar-facial-hair-color': this.facialHairColor === 'random' ? this.getRandomChoice(this.hairColors) : this.hairColors[this.facialHairColor],
-                '--avataaar-hat-color': this.topColor === 'random' ? this.getRandomChoice(this.hatAndShirtColors) : this.hatAndShirtColors[this.topColor],
-                '--avataaar-shirt-color': this.clotheColor === 'random' ? this.getRandomChoice(this.hatAndShirtColors) : this.hatAndShirtColors[this.clotheColor],
+                '--avataaar-facial-hair-color': this.facialHairColor,
+                '--avataaar-hat-color': this.hairColor,
+                '--avataaar-shirt-color': this.clotheColor,
               }
             },
         }

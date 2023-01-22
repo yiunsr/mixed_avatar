@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<svg viewBox="0 0 264 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-v-3fa90f43="">
+    <desc>Created with getavataaars.com</desc>
+    <defs>
+        <linearGradient id="color-01">
+            <stop stop-color="green"/>
+        </linearGradient>
+
+    </defs>
+    <rect width="50" height="50" fill="url(#color-01)" />
+    <circle
+    r="25"
+    cx="70"
+    cy="70"
+    stroke="url(#color-01)"
+    fill="none"
+    stroke-width="5" />
+</svg>

@@ -1,6 +1,6 @@
 <template>
   <div id="main" class="fill-height mt-2 mx-4">
-    <v-row>
+    <v-row class="mb-2">
       <v-col cols="2">
         <div id="avataaars" refs="mix_avatar">
           <v-sheet position="fixed">
@@ -11,13 +11,16 @@
               :facialHairType="avatarValue['facialHairType']"
               :mouthType="avatarValue['mouthType']"
               :clotheType="avatarValue['clotheType']"
-              :graphicShirtType="avatarValue['graphicShirtType']"
+              :graphicType="avatarValue['graphicShirtType']"
               :accessoriesType="avatarValue['accessoryType']"
               :hairColor="avatarValue['hairColor']"
+              :facialHairColor="avatarValue['facialHairColor']"
               :skinColor="avatarValue['skinColor']"
+              :clotheColor="avatarValue['clotheColor']"
             >
             </avataaars>
-            <v-btn @click="download('svg')">SVG Download</v-btn>
+            <div class="mb-2"><v-btn @click="download_svg('svg')">SVG Download</v-btn></div>
+            <div><v-btn @click="download_png">Png Download</v-btn></div>
           </v-sheet>
         </div>
       </v-col>
@@ -28,15 +31,19 @@
               {desc: 'skin color', name: 'skinColor', 
                 type: 'color', swatches: skinColorsSwatches },
               {desc: 'top & hair', name: 'topType', names: 'topTypes'},
-              {desc: 'top & hair color', name: 'hairColor', names: 'hairColors', 
+              {desc: 'top & hair color', name: 'hairColor',
                 type: 'color', swatches: hairColorSwatches },
               {desc: 'eyebrow', name: 'eyebrowType', names: 'eyebrowTypes'},
               {desc: 'eye', name: 'eyeType', names: 'eyeTypes'},
               {desc: 'mouth', name: 'mouthType', names: 'mouthTypes'},
-              {desc: 'facial Hair', name: 'facialHairType', names: 'facialHairTypes'},
+              {desc: 'facial hair', name: 'facialHairType', names: 'facialHairTypes'},
+              {desc: 'facial hair color', name: 'facialHairColor',
+                type: 'color', swatches: facialHairColorSwatches },
               {desc: 'accessories', name: 'accessoryType', names: 'accessoriesTypes'},
               {desc: 'clothes', name: 'clotheType', names: 'clothesType'},
               {desc: 'graphic shirt', name: 'graphicShirtType', names: 'GraphicShirtTypes'},
+              {desc: 'clothe color', name: 'clotheColor', 
+                type: 'color', swatches: clotheColorSwatches },
               ]"
               >
               <v-expansion-panel-title>{{  item.desc  }}</v-expansion-panel-title>
@@ -78,7 +85,9 @@
   import { accessoriesTypes } from '@/assetsTypes/accessories'
   import { facialHairTypes } from '@/assetsTypes/facial-hair'
   import { GraphicShirtTypes } from '@/assetsTypes/graphic-shirt'
-  import { hairColors, hairColorSwatches, skinColors, skinColorsSwatches, hatAndShirtColors } from '@/assetsTypes/colors'
+  import { hairColors, hairColorSwatches, facialHairColors, facialHairColorSwatches,
+    skinColors, skinColorsSwatches, clotheColors, clotheColorSwatches } 
+    from '@/assetsTypes/colors'
   import Avataaars from '@/components/Avataaars.vue'
 
   export default {
@@ -97,19 +106,20 @@
 
       let skinColor = skinColors[this.getRandomChoice(Object.keys(skinColors))];
       let hairColor = hairColors[this.getRandomChoice(Object.keys(hairColors))]; 
-      let hatAndShirtColor = this.getRandomChoice(Object.keys(hatAndShirtColors));
+      let facialHairColor = facialHairColors[this.getRandomChoice(Object.keys(facialHairColors))];
+      let clotheColor = clotheColors[this.getRandomChoice(Object.keys(clotheColors))];
       let avatarType = {
         topTypes, eyebrowTypes, eyeTypes, mouthTypes, clothesType,
         accessoriesTypes, facialHairTypes, GraphicShirtTypes,
-         hatAndShirtColors,
+        clotheColors,
       }
       let avatarValue = {
         topType, eyebrowType, eyeType, mouthType, clotheType,
         accessoryType, facialHairType, graphicShirtType, 
-        hairColor, skinColor, hatAndShirtColor,
+        hairColor, facialHairColor, skinColor, clotheColor,
       };
       return {
-        hairColorSwatches, skinColorsSwatches,
+        hairColorSwatches, facialHairColorSwatches, skinColorsSwatches, clotheColorSwatches,
         avatarType, avatarValue,
       }
     },
@@ -118,22 +128,54 @@
           const itemsLength = Object.entries(items).length
           return Object.entries(items)[Math.floor((Math.random()*(itemsLength)))][1]
       },
-      download(file_type){
-        if(file_type=="svg"){
-          let svgEl = document.querySelector("#avataaars svg");
-          svgEl.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-          var svgData = svgEl.outerHTML;
-          var preface = '<?xml version="1.0" standalone="no"?>\r\n';
-          var svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
-          var svgUrl = URL.createObjectURL(svgBlob);
-          var downloadLink = document.createElement("a");
-          downloadLink.href = svgUrl;
-          downloadLink.download = "avatar.svg";
-          document.body.appendChild(downloadLink);
-          downloadLink.click();
-          document.body.removeChild(downloadLink);
+      download_svg(file_type){
+        let svgEl = document.querySelector("#avataaars svg");
+        svgEl.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        let svgData = svgEl.outerHTML;
+        let preface = '<?xml version="1.0" standalone="no"?>\r\n';
+        let svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
+        let svgUrl = URL.createObjectURL(svgBlob);
+        let downloadLink = document.createElement("a");
+        downloadLink.href = svgUrl;
+        downloadLink.download = "avatar.svg";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      },
+      // https://stackoverflow.com/a/37236038/6652082
+      download_png(){
+        let svgEl = document.querySelector("#avataaars svg");
+        svgEl.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        let svgData = svgEl.outerHTML;
+        let preface = '<?xml version="1.0" standalone="no"?>\r\n';
+        let svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
+        let svgUrl = URL.createObjectURL(svgBlob);
+
+        let canvas = document.createElement("canvas");
+        let w=264;
+        let h=280;
+
+        canvas.width = w;
+        canvas.height = h;
+
+        let ctx = canvas.getContext("2d");
+
+        let img = new Image();
+        img.onload = function() {
+          ctx.drawImage(img, 0, 0);
+          let imgURL = canvas.toDataURL("image/png");
+          URL.revokeObjectURL(imgURL);
+          let dlLink = document.createElement('a');
+          dlLink.download = "image";
+          dlLink.href = imgURL;
+          dlLink.dataset.downloadurl = ["image/png", dlLink.download, dlLink.href]
+                                      .join(':');
+          document.body.appendChild(dlLink);
+          dlLink.click();
+          document.body.removeChild(dlLink);
         }
-      }
+      img.src = svgUrl;
+      },
     },
   }
 </script>
@@ -149,5 +191,8 @@
 .item{
   width: 110px;
   margin-top: 8px;
+}
+#part-box-wrap{
+  --avataaar-hair-color: black;
 }
 </style>
