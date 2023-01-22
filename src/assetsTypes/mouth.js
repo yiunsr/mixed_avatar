@@ -394,6 +394,23 @@ const Vomit = `
     </g>
 `;
 
+// avatar-generator start 
+const Surprise = `
+<g transform='translate(101, 114)'>
+  <g id='Mouth/Surprise' transform='translate(1., 1.)'>
+    <ellipse cx="32" cy="41" fill="#1b0640" rx="8" ry="7.5" opacity="0.699999988"/>
+  </g>
+</g>
+`;
+
+const Smirk=`
+<g transform='translate(101, 114)'>
+  <g id='Mouth/Smirk' transform="translate(-48, -60)  scale(2.5, 2.5)" opacity="0.699999988" fill="#000000">
+    <path fill="#1b0640" d="M30.318 41.728a.75.75 0 0 1 .364-1.456c2.433.609 4.165.32 5.288-.802a.75.75 0 0 1 1.06 1.06c-1.544 1.545-3.812 1.923-6.712 1.198z"/>
+  </g>
+</g>
+`;
+
 export const mouthTypes = {
   Concerned: Concerned,
   Default: Default,
@@ -406,5 +423,7 @@ export const mouthTypes = {
   Smile: Smile,
   Tongue: Tongue,
   Twinkle: Twinkle,
-  Vomit: Vomit
+  Vomit: Vomit,
+  Surprise: Surprise,
+  Smirk: Smirk,
 };

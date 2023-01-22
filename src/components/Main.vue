@@ -1,9 +1,9 @@
 <template>
   <div id="main" class="fill-height mt-2 mx-4">
     <v-row class="mb-2">
-      <v-col cols="2">
+      <v-col cols="3">
         <div id="avataaars" refs="mix_avatar">
-          <v-sheet position="fixed">
+          <v-sheet class="text-center" position="fixed">
             <avataaars
               :topType="avatarValue['topType']"
               :eyebrowType="avatarValue['eyebrowType']"
@@ -19,12 +19,12 @@
               :clotheColor="avatarValue['clotheColor']"
             >
             </avataaars>
-            <div class="mb-2"><v-btn @click="download_svg('svg')">SVG Download</v-btn></div>
+            <div class="mt-4 mb-2"><v-btn @click="download_svg('svg')">SVG Download</v-btn></div>
             <div><v-btn @click="download_png">Png Download</v-btn></div>
           </v-sheet>
         </div>
       </v-col>
-      <v-col cols="10">
+      <v-col cols="9">
         <div id="part-box-wrap">
           <v-expansion-panels>
             <v-expansion-panel v-for="(item) in [
@@ -186,7 +186,10 @@
 }
 #avataaars{
   margin-left: 8px;
-  width: 180px;
+  width: 400px;
+}
+#avataaars svg{
+  width: 360px;
 }
 .item{
   width: 110px;
