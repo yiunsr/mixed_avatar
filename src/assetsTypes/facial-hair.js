@@ -14,7 +14,7 @@ const BeardLight = `
         </mask>
         <use
           class='CustomColor'
-          fill='var(--avataaar-facial-hair-color)'
+          fill='url(#color-facial-hair)'
           fillRule='evenodd'
           href='#BeardLight-path1'
         />
@@ -35,7 +35,7 @@ const BeardMajestic = `
         </mask>
         <use
           class='CustomColor'
-          fill='var(--avataaar-facial-hair-color)'
+          fill='url(#color-facial-hair)'
           fillRule='evenodd'
           href='#BeardMajestic-path1'
         />
@@ -56,7 +56,7 @@ const BeardMedium = `
         </mask>
         <use
           class='CustomColor'
-          fill='var(--avataaar-facial-hair-color)'
+          fill='url(#color-facial-hair)'
           fillRule='evenodd'
           href='#BeardMedium-path1'
         />
@@ -79,7 +79,7 @@ const MoustacheFancy = `
         </mask>
         <use
           class='CustomColor'
-          fill='var(--avataaar-facial-hair-color)'
+          fill='url(#color-facial-hair)'
           fillRule='evenodd'
           href='#MoustacheFancy-path1'
         />
@@ -100,7 +100,7 @@ const MoustacheMagnum = `
         </mask>
         <use
           class='CustomColor'
-          fill='var(--avataaar-facial-hair-color)'
+          fill='url(#color-facial-hair)'
           fillRule='evenodd'
           href='#MoustacheMagnum-path1'
         />

@@ -8,7 +8,7 @@ const Skull = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g id="Clothing/Graphic/Skull" mask="url(#react-mask-1154)" fill-rule="evenodd" fill="#FFFFFF">
@@ -29,7 +29,7 @@ const SkullOutline = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
       <g
@@ -75,7 +75,7 @@ const Bat = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
       <g
@@ -100,7 +100,7 @@ const Cumbia = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
       <g
@@ -171,7 +171,7 @@ const Deer = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g
@@ -196,7 +196,7 @@ const Diamond = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g
@@ -241,7 +241,7 @@ const Hola = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g
@@ -266,7 +266,7 @@ const Selena = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
       <g
@@ -307,7 +307,7 @@ const Pizza = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g
@@ -349,7 +349,7 @@ const Resist = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g
@@ -415,7 +415,7 @@ const Bear = `
         <use xlink:href="#react-path-1153"></use>
     </mask>
     <use id="Clothes" fill="#E6E6E6" fill-rule="evenodd" xlink:href="#react-path-1153"></use>
-    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='var(--avataaar-shirt-color)'>
+    <g id="Color/Palette/" mask="url(#react-mask-1154)" fill-rule="evenodd" fill='url(#color-shirt)'>
         <rect id="🖍Color" x="0" y="0" width="264" height="110"></rect>
     </g>
     <g

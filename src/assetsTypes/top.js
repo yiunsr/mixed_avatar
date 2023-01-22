@@ -70,13 +70,13 @@ const Hat = `
               <g id='Mask-Hair' />
               <path
                 d='M123.182388,2 L141.817612,2 L141.817612,2 C160.609055,2 176.866947,15.0804442 180.890118,33.4361631 L190,75 L75,75 L84.1098821,33.4361631 L84.1098821,33.4361631 C88.1330533,15.0804442 104.390945,2 123.182388,2 Z'
-                fill='var(--avataaar-hat-color)'
+                fill='url(#color-hat)'
                 style="fill-opacity:0.6"
                 mask='url("#Hat-mask2")'
               />
               <ellipse
                 id='Hipster'
-                fill='var(--avataaar-hat-color)'
+                fill='url(#color-hat)'
                 mask='url("#Hat-mask2")'
                 cx='132'
                 cy='87.5'
@@ -97,7 +97,7 @@ const Hat = `
               </ellipse>
               <ellipse
                 id='Very'
-                fill='var(--avataaar-hat-color)'
+                fill='url(#color-hat)'
                 mask='url("#Hat-mask2")'
                 cx='132'
                 cy='82'
@@ -164,7 +164,7 @@ const Hijab = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hat-color)'
+              fill='url(#color-hat)'
               fillRule='evenodd'
               href='#Hijab-path2'
             />
@@ -218,7 +218,7 @@ const LongHairBigHair = `
               <mask id='LongHairBigHair-mask3' fill='white'>
                 <use href='#LongHairBigHair-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairBigHair-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairBigHair-path2' />
             </g>
             <g
               id='Shadow'
@@ -272,7 +272,7 @@ const LongHairBob = `
               <mask id='LongHairBob-mask2' fill='white'>
                 <use href='#LongHairBob-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairBob-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairBob-path2' />
             </g>
           </g>
         </g>
@@ -299,7 +299,7 @@ const LongHairBun = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#LongHairBun-path1'
             />
@@ -338,7 +338,7 @@ const LongHairCurly = `
               <mask id='LongHairCurly-mask2' fill='white'>
                 <use href='#LongHairCurly-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairCurly-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairCurly-path2' />
             </g>
           </g>
         </g>
@@ -375,7 +375,7 @@ const LongHairCurvy = `
               <mask id='LongHairCurvy-mask2' fill='white'>
                 <use href='#LongHairCurvy-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairCurvy-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairCurvy-path2' />
               <path
                 d='M62.6794556,184.462132 C69.755442,174.755405 62.148959,147.786913 56.1278159,137.800593 C72.9649824,130.137708 106.213574,131.553467 155.87359,142.047871 C151.079203,150.900348 149.123448,158.803527 150.006324,165.757409 C145.469118,171.332534 141.720304,177.127222 138.759883,183.141474 L103.888915,191.746789 C81.8528509,194.400378 68.1163643,191.97216 62.6794556,184.462132 Z'
                 id='Shadow'
@@ -424,7 +424,7 @@ const LongHairDreads = `
               <mask id='LongHairDreads-mask1' fill='white'>
                 <use href='#LongHairDreads-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairDreads-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairDreads-path2' />
               <path
                 d='M85.718098,185.073467 C86.8059563,185.024663 87.900098,185 89,185 L89,185 L93,185 L93,166.610951 C81.2286384,161.018987 71.7176526,151.441235 66.2110974,139.621749 C66.7437304,141.280375 67.3851037,142.912325 68.1617154,144.509125 C73.916823,156.341882 81.4183567,166.92083 84.4877837,179.589912 C84.9233139,181.387079 85.3569126,183.222183 85.718098,185.073467 Z M164.1633,187.578199 C158.061736,185.89767 151.635699,185 145,185 L145,185 L141,185 L141,166.610951 C151.900717,161.432585 160.863061,152.836228 166.502046,142.206866 C166.424719,145.200638 166.492065,148.178617 166.874747,151.055581 C167.944997,159.099715 170.876362,166.366 169.515856,174.635875 C168.770949,179.167686 166.790265,183.511457 164.1633,187.578199 Z'
                 id='Shadows'
@@ -640,7 +640,7 @@ const LongHairFrida = `
               transform='translate(57.000000, 12.000000)'>
               <path
                 d='M132,85.9365741 L132,86.1659169 C137.155374,87.0308248 141.196116,91.1828748 141.893354,96.3931952 C144.449672,93.4871212 146,89.6746099 146,85.5 C146,83.370043 145.596416,81.3343479 144.861548,79.4652142 C148.026608,76.4588698 150,72.2098901 150,67.5 C150,61.6639649 146.970105,56.5355997 142.397534,53.6021248 C143.424844,51.4510861 144,49.0427105 144,46.5 C144,38.865183 138.814518,32.4415002 131.77335,30.5587463 C131.922635,29.560863 132,28.5394662 132,27.5 C132,16.1781626 122.821837,7 111.5,7 C108.870853,7 106.357304,7.49493913 104.047446,8.3967274 C100.317449,3.30576666 94.2947759,0 87.5,0 C83.2377504,0 79.2793114,1.30076749 76,3.52698535 C72.7206886,1.30076749 68.7622496,0 64.5,0 C57.7052241,0 51.6825514,3.30576666 47.9525545,8.3967274 C45.6426956,7.49493913 43.1291474,7 40.5,7 C29.1781626,7 20,16.1781626 20,27.5 C20,28.5394662 20.0773647,29.560863 20.2266501,30.5587463 C13.1854816,32.4415002 8,38.865183 8,46.5 C8,48.6917361 8.4273349,50.7836628 9.20323008,52.6970055 C3.75045759,55.3899422 0,61.0069879 0,67.5 C0,72.9379417 2.63063706,77.7614652 6.68874609,80.7674054 C6.2406808,82.2665254 6,83.8551557 6,85.5 C6,89.6746099 7.55032816,93.4871212 10.1066457,96.3931952 C10.8038839,91.1828748 14.8446259,87.0308248 20,86.1659169 L20,85.9365741 C20.0276665,85.957925 20.0554443,85.9790669 20.0833333,86 C22.985911,38.8525302 68.5527463,55.7423492 76.000002,29.3361688 C83.4472619,55.7423461 129.014089,38.8525344 131.916667,86 C131.944556,85.9790669 131.972333,85.957925 132,85.9365741 Z M52,168.610951 L52,172.811832 C51.1847358,172.935746 50.3498715,173 49.5,173 C42.6790709,173 36.8248202,168.861157 34.3116389,162.957863 C25.7536314,162.348807 19,155.213101 19,146.5 C19,145.029028 19.1924867,143.603013 19.5536459,142.245771 C12.8575367,140.144362 8,133.88945 8,126.5 C8,122.755519 9.24731211,119.302363 11.3491137,116.533355 C13.0865598,119.870864 16.346706,122.289132 20.2085808,122.867187 C21.9518066,143.114792 34.4692178,160.282984 52,168.610951 Z M100,168.610951 L100,172.811832 C100.815264,172.935746 101.650128,173 102.5,173 C109.320929,173 115.17518,168.861157 117.688361,162.957863 C126.246369,162.348807 133,155.213101 133,146.5 C133,145.029028 132.807513,143.603013 132.446354,142.245771 C139.142463,140.144362 144,133.88945 144,126.5 C144,122.755519 142.752688,119.302363 140.650886,116.533355 C138.91344,119.870864 135.653294,122.289132 131.791419,122.867187 C130.048193,143.114792 117.530782,160.282984 100,168.610951 Z'
-                fill='var(--avataaar-hair-color)'
+                fill='url(#color-hair)'
               />
             </g>
             <g
@@ -812,7 +812,7 @@ const LongHairFro = `
               <mask id='LongHairFro-mask2' fill='white'>
                 <use href='#LongHairFro-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairFro-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairFro-path2' />
             </g>
           </g>
         </g>
@@ -839,7 +839,7 @@ const LongHairFroBand = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#LongHairFroBand-path2'
             />
@@ -885,7 +885,7 @@ const LongHairMiaWallace = `
               <mask id='LongHairMiaWallace-mask2' fill='white'>
                 <use href='#LongHairMiaWallace-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairMiaWallace-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairMiaWallace-path2' />
             </g>
           </g>
         </g>
@@ -910,7 +910,7 @@ const LongHairNotTooLong = `
               <mask id='LongHairNotTooLong-mask2' fill='white'>
                 <use href='#LongHairNotTooLong-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairNotTooLong-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairNotTooLong-path2' />
             </g>
             <g
               id='Top'
@@ -961,7 +961,7 @@ const LongHairShavedSides = `
               <path
                 d='M116.179148,40 L146,40 C171.405098,40 192,60.5949015 192,86 L192,154.108712 C192,180.650314 210.758775,204.349179 222.609956,226.05167 C234.461138,247.754161 215.254522,268.242596 195.770735,276.769484 C190.902336,278.900091 185.645645,280 180.331438,280 L135.26309,280 C78.9108161,280 70.2166412,216.309596 67.6972794,146.504423 L70.2166412,84.1431398 C71.212998,59.4805095 91.4964003,40 116.179148,40 Z'
                 class='CustomColor'
-                fill='var(--avataaar-hair-color)'
+                fill='url(#color-hair)'
                 mask='url("#LongHairShavedSides-mask3")'
               />
             </g>
@@ -1017,7 +1017,7 @@ const LongHairStraight = `
               <mask id='LongHairStraight-mask2' fill='white'>
                 <use href='#LongHairStraight-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairStraight-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairStraight-path2' />
             </g>
             <path
               d='M192.506381,99.3351151 C197.3745,101.107702 202.263079,102.071957 207,102.148232 L207,102.148232 L207,92 C207,71.5654643 198.717268,53.0654643 185.325902,39.6740982 C198.717268,53.0654643 207,71.5654643 207,92 L207,215.608051 C194.525121,205.236892 178.490913,199 161,199 L157,199 L157,180.610951 L157,180.610951 C174.530782,172.282984 187.048193,155.114792 188.791419,134.867187 C194.569129,134.002364 199,129.018625 199,123 L199,110 C199,105.357474 196.363649,101.3307 192.506381,99.3351151 Z M190.18005,98.4258987 C189.794121,98.3201038 189.400422,98.233095 189,98.1659169 L189,97.9170491 C189.392974,98.0918644 189.786355,98.2614951 190.18005,98.4258987 Z M83,155.245847 C88.6015372,166.317951 97.7726252,175.277407 109,180.610951 L109,199 L105,199 C97.3271796,199 89.9346808,200.200199 83,202.423101 L83,155.245847 Z'
@@ -1058,7 +1058,7 @@ const LongHairStraight2 = `
               <mask id='LongHairStraight2-mask2' fill='white'>
                 <use href='#LongHairStraight2-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairStraight2-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairStraight2-path2' />
             </g>
             <path
               d='M67,113 C84.8226408,80.6646674 137.535357,80.6069148 154.429684,64.2083647 C165.207546,72.6982916 182.891727,79.2665518 188.963018,97.8687161 C182.891727,76.423995 165.207546,66.5601054 154.429684,56.777113 C137.535357,75.6732583 84.8226408,75.7398069 67,113 Z'
@@ -1099,7 +1099,7 @@ const LongHairStraightStrand = `
               <mask id='LongHairStraightStrand-mask2' fill='white'>
                 <use href='#LongHairStraightStrand-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#LongHairStraightStrand-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#LongHairStraightStrand-path2' />
             </g>
             <path
               d='M59,102.418954 L59,108.837908 C78.9453743,105.750496 99.5895621,88.3902571 111.046195,62.6582378 C111.455505,61.738913 111.849027,60.8180234 112.226862,59.8960843 C116.231662,70.5822127 123.321236,78.70828 133.495584,84.2742862 C134.956498,86.4697241 136.497401,88.5566361 138.118291,90.5350224 C125.443111,85.0120855 116.812635,76.1324394 112.226862,63.8960843 C111.849027,64.8180234 111.455505,65.738913 111.046195,66.6582378 C99.5895621,92.3902571 78.9453743,109.750496 59,112.837908 L59,102.418954 Z M207,101.140388 L207,110.280776 C192.046922,109.412723 173.901259,103.744646 156.14893,93.4953343 C145.87623,87.5643877 136.866205,80.7523483 129.502994,73.639773 C128.137922,71.1289501 126.860094,68.4997578 125.669508,65.752196 C133.646468,74.2579416 144.017178,82.4910638 156.14893,89.4953343 C173.901259,99.7446457 192.046922,105.412723 207,106.280776 L207,101.140388 Z'
@@ -1143,7 +1143,7 @@ const ShortHairDreads01 = `
               </mask>
               <use
                 class='CustomColor'
-                fill='var(--avataaar-hair-color)'
+                fill='url(#color-hair)'
                 href='#ShortHairDreads01-path3'
               />
             </g>
@@ -1178,7 +1178,7 @@ const ShortHairDreads02 = `
               <mask id='ShortHairDreads02-mask1' fill='white'>
                 <use href='#ShortHairDreads02-path3' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#ShortHairDreads02-path3' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#ShortHairDreads02-path3' />
             </g>
           </g>
         </g>
@@ -1229,7 +1229,7 @@ const ShortHairFrizzle = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairFrizzle-path1'
             />
@@ -1283,7 +1283,7 @@ const ShortHairShaggy = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               transform='translate(143.465161, 67.234158) scale(-1, 1) translate(-143.465161, -67.234158) '
               href='#ShortHairShaggy-path1'
@@ -1318,7 +1318,7 @@ const ShortHairShaggyMullet = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairShaggyMullet-path2'
             />
@@ -1379,7 +1379,7 @@ const ShortHairShortCurly = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairShortCurly-path1'
             />
@@ -1433,7 +1433,7 @@ const ShortHairShortFlat = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairShortFlat-path1'
             />
@@ -1486,7 +1486,7 @@ const ShortHairShortRound = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairShortRound-path1'
             />
@@ -1539,7 +1539,7 @@ const ShortHairShortWaved = `
             <use
               class='CustomColor'
               stroke='none'
-              fill='var(--avataaar-hair-color)'
+              fill='url(#color-hair)'
               fillRule='evenodd'
               href='#ShortHairShortWaved-path1'
             />
@@ -1574,7 +1574,7 @@ const ShortHairSides = `
               <mask id='ShortHairSides-mask1' fill='white'>
                 <use href='#ShortHairSides-path3' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#ShortHairSides-path3' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#ShortHairSides-path3' />
             </g>
           </g>
         </g>
@@ -1627,7 +1627,7 @@ const ShortHairTheCaesar = `
               <mask id='ShortHairTheCaesar-mask2' fill='white'>
                 <use href='#ShortHairTheCaesar-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#ShortHairTheCaesar-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#ShortHairTheCaesar-path2' />
             </g>
           </g>
         </g>
@@ -1680,7 +1680,7 @@ const ShortHairTheCaesarSidePart = `
               <mask id='ShortHairTheCaesarSidePart-mask2' fill='white'>
                 <use href='#ShortHairTheCaesarSidePart-path2' />
               </mask>
-              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#ShortHairTheCaesarSidePart-path2' />
+              <use class='CustomColor' fill='url(#color-hair)' href='#ShortHairTheCaesarSidePart-path2' />
             </g>
           </g>
         </g>
@@ -1753,7 +1753,7 @@ const Turban = `
                 <mask id='Turban-mask3' fill='white'>
                   <use href='#Turban-path3' />
                 </mask>
-                <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#Turban-path3' />
+                <use class='CustomColor' fill='url(#color-hat)' href='#Turban-path3' />
               </g>
               <path
                 d='M48.0110963,96.0123559 C48.3807929,121.112082 58.0438337,136.107963 77.0002187,141 C57.6224465,136.289117 47.9557798,121.632254 48.0002187,97.0294118 C48.0008313,96.6902213 48.0044682,96.351197 48.0110963,96.0123559 Z M152.645822,30.4681115 C153.39011,36.1953086 152.126202,42.8891982 148.000219,50.135763 C136.847465,71.5667661 76.561434,72.0039826 76.3339794,129.679698 C76.1051437,67.7612631 136.805324,67.3799133 148.000219,44.5441176 C150.669864,39.5668152 152.141299,34.8351296 152.645822,30.4681115 Z'
@@ -1815,7 +1815,7 @@ const WinterHat1 = `
             <mask id='WinterHat1-mask2' fill="white">
               <use href='#WinterHat1-path1' />
             </mask>
-            <use class='CustomColor' fill="var(--avataaar-hat-color)" href='#WinterHat1-path1' />
+            <use class='CustomColor' fill="url(#color-hat)" href='#WinterHat1-path1' />
           </g>
           <g id="hat-front">
             <use
@@ -1876,7 +1876,7 @@ const WinterHat2 = `
             <mask id='WinterHat2-mask2' fill='white'>
               <use href='#WinterHat2-path1' />
             </mask>
-            <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#WinterHat2-path1' />
+            <use class='CustomColor' fill='url(#color-hat)' href='#WinterHat2-path1' />
             <HatColor maskID='WinterHat2-mask2' defaultColor='Blue01' />
             <rect
               id='color-dark'
@@ -1976,7 +1976,7 @@ const WinterHat3 = `
             <mask id='WinterHat3-mask2' fill='white'>
               <use href='#WinterHat3-path1' />
             </mask>
-            <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#WinterHat3-path1' />
+            <use class='CustomColor' fill='url(#color-hat)' href='#WinterHat3-path1' />
           </g>
           <g id='hat-front'>
             <use
@@ -2048,7 +2048,7 @@ const WinterHat4 = `
             <mask id='WinterHat4-mask2' fill='white'>
               <use href='#WinterHat4-path1' />
             </mask>
-            <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#WinterHat4-path1' />
+            <use class='CustomColor' fill='url(#color-hat)' href='#WinterHat4-path1' />
             <mask id='WinterHat4-mask3' fill='white'>
               <use href='#WinterHat4-path2' />
             </mask>

@@ -13,6 +13,18 @@
           <path
             d='M124,144.610951 L124,163 L128,163 L128,163 C167.764502,163 200,195.235498 200,235 L200,244 L0,244 L0,235 C-4.86974701e-15,195.235498 32.235498,163 72,163 L72,163 L76,163 L76,144.610951 C58.7626345,136.422372 46.3722246,119.687011 44.3051388,99.8812385 C38.4803105,99.0577866 34,94.0521096 34,88 L34,74 C34,68.0540074 38.3245733,63.1180731 44,62.1659169 L44,56 L44,56 C44,25.072054 69.072054,5.68137151e-15 100,0 L100,0 L100,0 C130.927946,-5.68137151e-15 156,25.072054 156,56 L156,62.1659169 C161.675427,63.1180731 166,68.0540074 166,74 L166,88 C166,94.0521096 161.51969,99.0577866 155.694861,99.8812385 C153.627775,119.687011 141.237365,136.422372 124,144.610951 Z'
             id='path-silhouette'></path>
+          <linearGradient id="color-hair">
+            <stop :stop-color="hairColor"/>
+          </linearGradient>
+          <linearGradient id="color-facial-hair">
+            <stop :stop-color="facialHairColor"/>
+          </linearGradient>
+          <linearGradient id="color-hat">
+            <stop :stop-color="hairColor"/>
+          </linearGradient>
+          <linearGradient id="color-shirt">
+            <stop :stop-color="clotheColor"/>
+          </linearGradient>
         </defs>
         <g
           id='Avataaar'
@@ -67,8 +79,8 @@
                     fill='#000000'
                     mask='url(#mask-silhouette)'></path>
                 </g>
-                <g :style="cssVars" v-html="clothesType[clotheType]"></g>
-                <g v-if="clotheType === 'GraphicShirt'" :style="cssVars" v-html="GraphicShirtTypes[graphicType]"></g>
+                <g v-html="clothesType[clotheType]"></g>
+                <g v-if="clotheType === 'GraphicShirt'" v-html="GraphicShirtTypes[graphicType]"></g>
                 <g v-html="eyeTypes[eyeType]"></g>
                 <g v-html="mouthTypes[mouthType]"></g>
                 <g v-html="eyebrowTypes[eyebrowType]"></g>
@@ -86,8 +98,8 @@
                     </g>
                   </g>
                 </g>
-                <g :style="cssVars" v-html="topTypes[topType]"></g>
-                <g :style="cssVars" v-html="facialHairTypes[facialHairType]"></g>
+                <g v-html="topTypes[topType]"></g>
+                <g v-html="facialHairTypes[facialHairType]"></g>
                 <g v-html="accessoriesTypes[accessoriesType]"></g>
               </g>
             </g>
@@ -141,16 +153,6 @@
                 GraphicShirtTypes: GraphicShirtTypes,
             }
         },
-        computed: {
-            cssVars () {
-              return {
-                '--avataaar-hair-color': this.hairColor,
-                '--avataaar-facial-hair-color': this.facialHairColor,
-                '--avataaar-hat-color': this.hairColor,
-                '--avataaar-shirt-color': this.clotheColor,
-              }
-            },
-        }
     }
     </script>
     
